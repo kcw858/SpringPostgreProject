@@ -10,7 +10,7 @@ import com.sist.web.vo.*;
 import lombok.RequiredArgsConstructor;
 
 import com.sist.web.mapper.*;
-
+// gh pr create --base develop --head feature/login --title "color change" --body "기능수정 완료"
 @Controller
 @RequiredArgsConstructor
 public class MemberController {
