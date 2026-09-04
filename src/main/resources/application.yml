@@ -1,0 +1,29 @@
+server:
+  port: 9090
+  servlet:
+    context-path: /
+
+spring:
+  
+  datasource:
+    #oracle: 
+    #  url: ${DB_URL}
+    #  username: ${DB_USERNAME}
+    #  password: ${DB_PASSWORD}
+    #  driver-class-name: oracle.jdbc.driver.OracleDriver
+
+    url: jdbc:postgresql://localhost:5432/recipe
+    username: postgres
+    password: 1234
+    driver-class-name: org.postgresql.Driver
+ 
+  thymeleaf: 
+    cache: false
+    encoding: UTF-8
+    prefix: classpath:templates/
+    suffix: .html
+    mode: HTML
+
+mybatis: 
+  type-aliases-package: com.sist.web.vo
+  mapper-locations: mybatis/mapper/*.xml
